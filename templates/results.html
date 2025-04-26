@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - YouTube SEO Helper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube SEO Helper</h1>
+            <p>Optimization Results</p>
+        </header>
+        
+        <main>
+            <div class="results">
+                <h2>SEO Analysis Results</h2>
+                
+                <div class="video-info">
+                    <h3>Video Information</h3>
+                    <p><strong>Title:</strong> {{ metadata.title }}</p>
+                    <p><strong>Channel:</strong> {{ metadata.channel_title }}</p>
+                    <p><strong>Published:</strong> {{ metadata.published_at }}</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h3>Title Analysis</h3>
+                    <div class="analysis-content">
+                        {{ title_analysis | safe }}
+                    </div>
+                </div>
+                
+                <div class="analysis-section">
+                    <h3>Description Analysis</h3>
+                    <div class="analysis-content">
+                        {{ description_analysis | safe }}
+                    </div>
+                </div>
+                
+                <div class="analysis-section">
+                    <h3>Tags Analysis</h3>
+                    <div class="analysis-content">
+                        {{ tags_analysis | safe }}
+                    </div>
+                </div>
+                
+                <a href="/" class="btn">Analyze Another Video</a>
+            </div>
+        </main>
+        
+        <footer>
+            <p>YouTube SEO Helper &copy; 2025</p>
+            <a href="/about">About this project</a>
+        </footer>
+    </div>
+</body>
+</html>

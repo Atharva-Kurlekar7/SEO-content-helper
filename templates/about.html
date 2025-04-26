@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - YouTube SEO Helper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About YouTube SEO Helper</h1>
+            <p>A generative AI project to enhance YouTube content visibility</p>
+        </header>
+        
+        <main class="about-content">
+            <section class="project-overview">
+                <h2>Project Overview</h2>
+                <p>YouTube SEO Helper is a tool designed to help content creators optimize their videos for better search engine visibility and audience engagement. Using advanced AI techniques, this tool analyzes video titles, descriptions, and tags to provide personalized SEO recommendations based on current best practices.</p>
+            </section>
+            
+            <section class="video-tutorial">
+                <h2>Video Tutorial</h2>
+                <div class="video-container">
+                    <!-- Replace VIDEO_ID with your actual YouTube tutorial video ID -->
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <section class="key-features">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Smart Title Analysis</h3>
+                        <p>Get specific recommendations to improve your video titles with keyword placement, length optimization, and engagement factors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Description Enhancement</h3>
+                        <p>Optimize your descriptions with strategic keyword placement, improved readability, and suggestions for timestamps, links, and calls-to-action.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Tag Optimization</h3>
+                        <p>Receive tailored tag suggestions to improve discoverability with the right mix of broad and specific keywords.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>AI-Powered Recommendations</h3>
+                        <p>Leveraging Generative AI and Retrieval-Augmented Generation (RAG) to provide content-specific optimization advice.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="technical-details">
+                <h2>Technical Implementation</h2>
+                <p>This project implements two core generative AI components:</p>
+                <ul>
+                    <li><strong>Prompt Engineering:</strong> Carefully crafted prompts that generate tailored SEO advice for different content types</li>
+                    <li><strong>Retrieval-Augmented Generation (RAG):</strong> A knowledge base of SEO best practices with vector retrieval to enhance recommendations with relevant domain knowledge</li>
+                </ul>
+                <p>The application is built with Flask and uses the Google Gemini API for generating insightful recommendations.</p>
+            </section>
+            
+            <section class="github-repo">
+                <h2>GitHub Repository</h2>
+                <p>This project is open-source and available on GitHub. Feel free to contribute or adapt it for your own needs.</p>
+                <div class="action-buttons">
+                    <a href="https://github.com/Atharva-Kurlekar7/SEO-content-helper.git" class="button primary-button">
+                        <i class="fa fa-github"></i> View on GitHub
+                    </a>
+                    <a href="/" class="button secondary-button">
+                        <i class="fa fa-home"></i> Back to Home
+                    </a>
+                </div>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <p>YouTube SEO Helper &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

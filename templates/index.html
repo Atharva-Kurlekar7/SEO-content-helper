@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube SEO Helper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube SEO Helper</h1>
+            <p>Optimize your YouTube content for better visibility and engagement</p>
+        </header>
+        
+        <section class="how-to-use">
+            <h2>How to Use This Tool</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Input Method</h3>
+                        <p>Select either "YouTube URL" to analyze an existing video or "Title & Description" to analyze content you're planning to publish.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Enter Your Content</h3>
+                        <p>For URL option: Paste any public YouTube video link.<br>
+                        For manual option: Enter your title, description, and tags (comma-separated).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Click "Analyze"</h3>
+                        <p>Our AI-powered system will process your content and retrieve SEO best practices from our knowledge base.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Review Recommendations</h3>
+                        <p>Get detailed, actionable suggestions to improve your title, description, and tags for better discoverability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <main>
+            <div class="input-options">
+                <h2>Enter Your Content</h2>
+                
+                <div class="option-tabs">
+                    <button class="tab-btn active" data-tab="url-tab">YouTube URL</button>
+                    <button class="tab-btn" data-tab="manual-tab">Title & Description</button>
+                </div>
+                
+                <div class="tab-content active" id="url-tab">
+                    <form id="url-form">
+                        <div class="form-group">
+                            <label for="youtube-url">Enter YouTube Video URL:</label>
+                            <input type="text" id="youtube-url" name="youtube-url" 
+                                  placeholder="https://www.youtube.com/watch?v=...">
+                        </div>
+                        <button type="submit" class="submit-btn">Analyze</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="manual-tab">
+                    <form id="manual-form">
+                        <div class="form-group">
+                            <label for="video-title">Video Title:</label>
+                            <input type="text" id="video-title" name="video-title" 
+                                  placeholder="Enter your video title">
+                        </div>
+                        <div class="form-group">
+                            <label for="video-description">Video Description:</label>
+                            <textarea id="video-description" name="video-description" 
+                                     placeholder="Enter your video description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="video-tags">Video Tags (comma separated):</label>
+                            <input type="text" id="video-tags" name="video-tags" 
+                                  placeholder="tag1, tag2, tag3">
+                        </div>
+                        <button type="submit" class="submit-btn">Analyze</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="results" id="results-container" style="display: none;">
+                <h2>SEO Analysis Results</h2>
+                <div class="results-content">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>YouTube SEO Helper &copy; 2025</p>
+            <a href="/about">About this project</a>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

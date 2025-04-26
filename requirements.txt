@@ -1,0 +1,29 @@
+
+# flask==2.3.3
+# requests==2.31.0
+# python-dotenv==1.0.0
+# google-api-python-client==2.97.0
+# beautifulsoup4==4.12.2
+# markdown==3.4.4
+# python-youtube==0.8.2
+# google-generativeai==0.3.1
+# scikit-learn
+# numpy
+# nltk
+# transformers==4.18.0
+# sentence-transformers==2.3.0
+# langchain==0.0.267
+
+flask==2.3.3
+requests==2.31.0
+python-dotenv==1.0.0
+google-api-python-client==2.97.0
+beautifulsoup4==4.12.2
+markdown==3.4.4
+python-youtube==0.8.2
+google-generativeai==0.3.1
+scikit-learn
+numpy
+nltk
+gunicorn
+

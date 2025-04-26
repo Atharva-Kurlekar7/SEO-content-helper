@@ -413,3 +413,31 @@
 .button i {
     margin-right: 8px;
 }
+/* Fix for text overflow in analysis results */
+.results-content {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.analysis-section {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure all text content wraps properly */
+p, li, h1, h2, h3, h4, h5, h6 {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Make pre-formatted text blocks scrollable instead of overflowing */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+  max-width: 100%;
+}

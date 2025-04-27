@@ -71,8 +71,8 @@ youtube-seo-helper/
 ## Prerequisites
 
 - Python 3.8 or higher
-- Google API key (for YouTube Data API)
-- Gemini API key (optional, for enhanced analysis)
+- Google API key (for YouTube Data API) - https://ai.google.dev/gemini-api/docs/api-key
+- Gemini API key (optional, for enhanced analysis) - https://www.getphyllo.com/post/how-to-get-youtube-api-key
 
 ## Installation
 

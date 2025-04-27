@@ -6,7 +6,7 @@ YouTube SEO Helper is a web application that helps content creators optimize the
 
 ## Architecture Diagram
 
-![SEO-CONTENT-HELPER](./SEO_helper_architecture_diag.svg)
+![SEO-CONTENT-HELPER](./SEO_helper_architecture_diag.png)
 
 ## Component Description
 

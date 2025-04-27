@@ -1,7 +1,7 @@
 # YouTube SEO Helper
 link - https://seo-content-helper.onrender.com/
 A sophisticated tool that helps content creators optimize their YouTube videos for better search engine visibility and audience engagement.
-
+Github link - https://github.com/Atharva-Kurlekar7/SEO-content-helper/tree/main
 ## Overview
 
 YouTube SEO Helper analyzes YouTube video metadata and provides actionable recommendations to improve search engine optimization. The application leverages advanced AI technologies including Prompt Engineering and Retrieval-Augmented Generation (RAG) to deliver customized SEO advice.
